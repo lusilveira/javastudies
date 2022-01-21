@@ -1,0 +1,20 @@
+package imc;
+
+import java.util.Scanner;
+
+public class Imc {
+
+	public static void main(String[] args) {
+		// read user keyboard
+		Scanner reader = new Scanner(System.in);
+		
+		
+		// Creating the variables for the calculation 
+		int userWeight = reader.nextInt();
+		double userHeight = reader.nextDouble();
+		double imc = userWeight /( userHeight*userHeight );
+		
+		System.out.println(imc);
+	}
+
+}

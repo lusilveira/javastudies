@@ -1,0 +1,56 @@
+package jokenpo;
+
+import java.util.Scanner;
+
+public class JoKenPo {
+
+	public static void main(String[] args) {
+		int player, computer;
+		Scanner hand = new Scanner(System.in);
+		
+		System.out.println("JoKenPô");
+		System.out.println("");
+		System.out.println("1. Stone");
+		System.out.println("2. Paper");
+		System.out.println("3. Scissors");
+		System.out.println("4. Pin");
+		System.out.println("Enter desired option");
+		System.out.println("");
+		//player logic
+		player = hand.nextInt();
+		switch (player) {
+		case 1:
+			System.out.println("Player chose Stone");
+			break;
+		case 2:
+				System.out.println("Player chose Paper");
+				break;
+		case 3:
+			System.out.println("Player chose Scissors");
+			break;
+		case 4:
+			System.out.println("Player chose Pin");
+			break;
+		default:
+			System.out.println("Invalid Option");
+			
+		}
+		//computer logic
+		computer = (int)(Math.random()*3 + 1);
+		hand.close();
+		switch (computer) {
+		case 1:
+			System.out.println("Computer  chose Stone");
+			break;
+		case 2:
+				System.out.println("Computer chose Paper");
+				break;
+		case 3:
+			System.out.println("Computer chose Scissors");
+			break;
+		case 4:
+			System.out.println("Computer chose Pin");
+			break;
+	}
+
+}

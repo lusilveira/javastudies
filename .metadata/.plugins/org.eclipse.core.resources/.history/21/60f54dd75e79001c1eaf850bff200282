@@ -1,0 +1,14 @@
+package imc;
+
+public class Imc {
+
+	public static void main(String[] args) {
+		// Creating the variables for the calculation 
+		int userWeight = 76;
+		double userHeight = 1.77;
+		double imc = userWeight /( userHeight*userHeight );
+		
+		System.out.println(imc);
+	}
+
+}

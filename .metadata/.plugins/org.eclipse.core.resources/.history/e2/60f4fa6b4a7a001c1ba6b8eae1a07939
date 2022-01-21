@@ -1,0 +1,24 @@
+package jokenpo;
+
+import java.util.Scanner;
+
+public class JoKenPo {
+
+	public static void main(String[] args) {
+		int player, computer;
+		Scanner hand = new Scanner(System.in);
+		
+		System.out.println("JoKenPô");
+		System.out.println("");
+		System.out.println("1. Stone");
+		System.out.println("2. Paper");
+		System.out.println("3. scissors");
+		System.out.println("4. Pin");
+		System.out.println("Enter desired option");
+		//player logic
+		player = hand.nextInt();
+		hand.close();
+
+	}
+
+}
